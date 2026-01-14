@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://buh74.su/sitemap.xml
