@@ -1,3 +1,4 @@
+// app/components/SeoHead.tsx
 'use client';
 
 import Script from 'next/script';
@@ -13,7 +14,7 @@ export default function SeoHead({
   schema?: Record<string, any>;
 }) {
   const pathname = usePathname();
-  const canonical = `https://svoedelo.ru${pathname}`;
+  const canonical = `https://svoedelo.ru${pathname}`; // ← УБРАНЫ ПРОБЕЛЫ!
 
   return (
     <>
