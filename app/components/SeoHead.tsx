@@ -1,4 +1,3 @@
-// app/components/SeoHead.tsx
 'use client';
 
 import Script from 'next/script';
@@ -14,14 +13,13 @@ export default function SeoHead({
   schema?: Record<string, any>;
 }) {
   const pathname = usePathname();
-  const canonical = `https://svoedelo.ru${pathname}`; // ← УБРАНЫ ПРОБЕЛЫ!
+  const canonical = `https://buh74.su${pathname}`; // ← именно так!
 
   return (
     <>
       {title && <title>{title}</title>}
       {description && <meta name="description" content={description} />}
       <link rel="canonical" href={canonical} />
-
       {schema && (
         <Script id="structured-data" type="application/ld+json">
           {JSON.stringify(schema)}
